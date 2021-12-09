@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Chat.Client">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="500.0">
+         <children>
+            <Pane prefHeight="66.0" prefWidth="500.0">
+               <children>
+                  <HBox prefHeight="66.0" prefWidth="500.0">
+                     <children>
+                        <Pane id="titlepane" prefHeight="66.0" prefWidth="170.0">
+                           <children>
+                              <FlowPane prefHeight="66.0" prefWidth="170.0">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/logo_chat_lan.png" />
+                                       </image>
+                                       <FlowPane.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </FlowPane.margin>
+                                    </ImageView>
+                                    <Label text="Chat Lan">
+                                       <font>
+                                          <Font name="Arial Bold Italic" size="25.0" />
+                                       </font>
+                                       <textFill>
+                                          <LinearGradient endX="0.5534351217837734" endY="0.5725190775995036">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.9599999785423279" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="0.007680491551459294">
+                                                   <color>
+                                                      <Color red="0.46666666865348816" green="0.6313725709915161" blue="0.8274509906768799" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="0.5001772421127259">
+                                                   <color>
+                                                      <Color red="0.4745098054409027" green="0.7960784435272217" blue="0.7921568751335144" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="0.9019607901573181" green="0.5176470875740051" blue="0.6823529601097107" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <effect>
+                                          <Glow />
+                                       </effect>
+                                       <FlowPane.margin>
+                                          <Insets top="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </Pane>
+                        <Pane id="profilepane" prefHeight="66.0" prefWidth="240.0">
+                           <children>
+                              <FlowPane prefHeight="66.0" prefWidth="240.0">
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/person.png" />
+                                       </image>
+                                       <FlowPane.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </FlowPane.margin>
+                                    </ImageView>
+                                    <Label fx:id="userNameLabel" text="User Name ">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                       <effect>
+                                          <Glow />
+                                       </effect>
+                                       <textFill>
+                                          <LinearGradient endX="0.6297710360461519" endY="0.5763358860525466">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.9599999785423279" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="0.007680491551459294">
+                                                   <color>
+                                                      <Color red="0.46666666865348816" green="0.6313725709915161" blue="0.8274509906768799" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="0.5001772421127259">
+                                                   <color>
+                                                      <Color red="0.4745098054409027" green="0.7960784435272217" blue="0.7921568751335144" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="0.9019607901573181" green="0.5176470875740051" blue="0.6823529601097107" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                       <FlowPane.margin>
+                                          <Insets left="10.0" top="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                 </children>
+                              </FlowPane>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                        <Pane prefHeight="66.0" prefWidth="90.0">
+                           <children>
+                              <Button id="buttonLogOut" fx:id="logOut" layoutX="17.0" layoutY="22.0" mnemonicParsing="false" onAction="#clickLogOut" text="Logout">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="12.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.5027472527472527">
+                                             <color>
+                                                <Color red="0.8421052694320679" green="0.8274464011192322" blue="0.4023391902446747" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane id="borderPaneChat" prefHeight="578.0" prefWidth="500.0">
+               <children>
+                  <ScrollPane id="chatscroll" focusTraversable="false" hbarPolicy="NEVER" pannable="true" prefHeight="578.0" prefWidth="500.0" vbarPolicy="NEVER">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <content>
+                        <VBox id="vboxchat" fx:id="vboxChat" minHeight="578.0" minWidth="500.0" prefWidth="500.0" spacing="10.0" styleClass="borderColor" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Pane id="borderPaneText" prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <HBox prefHeight="30.0" prefWidth="500.0">
+                     <children>
+                        <TextArea id="chatTextArea" fx:id="textAreaMsg" focusTraversable="false" prefHeight="41.0" prefWidth="436.0" wrapText="true">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextArea>
+                        <ImageView id="send" fx:id="sendImg" fitHeight="30.0" fitWidth="40.0" onMouseClicked="#sendSmg" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../image/send.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+#backgroundSign{
+    -fx-background-color: #696969;
+}
+#titlepane{
+    -fx-border-width: 0.2;
+    -fx-border-color: white;
+}
+#chatTextArea{
+    -fx-border-style: solid;
+    -fx-border-color: burlywood;
+    -fx-control-inner-background: #292828;
+    -fx-text-fill:white;
+}
+#vboxchat{
+    -fx-background-color: #696969;
+}
+#borderPaneText{
+    -fx-border-color: burlywood;
+    -fx-border-width: 1;
+}
+#buttonLogOut{
+    -fx-background-color: #696969;
+    -fx-border-radius: 10;
+    -fx-border-color: burlywood;
+}
+#buttonStartChat{
+    -fx-background-color: #696969;
+    -fx-border-radius: 10;
+    -fx-border-color: burlywood;
+}
+
+
